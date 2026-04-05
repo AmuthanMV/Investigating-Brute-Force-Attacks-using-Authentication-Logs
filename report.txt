@@ -1,0 +1,42 @@
+=================================================================
+BRUTE FORCE ATTACK INVESTIGATION USING AUTHENTICATION LOGS
+=================================================================
+
+[1] OVERALL LOG SUMMARY
+------------------------------
+Total Log Entries       : 86
+Total Failed Logins     : 76
+Total Successful Logins : 10
+
+[2] SUSPICIOUS IP ADDRESSES
+------------------------------
+IP Address: 192.168.1.50  |  Failed Attempts: 7
+IP Address: 192.168.1.60  |  Failed Attempts: 6
+IP Address: 192.168.1.70  |  Failed Attempts: 7
+IP Address: 192.168.1.10  |  Failed Attempts: 6
+IP Address: 192.168.1.20  |  Failed Attempts: 6
+IP Address: 192.168.1.80  |  Failed Attempts: 7
+IP Address: 192.168.1.95  |  Failed Attempts: 7
+IP Address: 192.168.1.100  |  Failed Attempts: 7
+IP Address: 192.168.1.110  |  Failed Attempts: 7
+IP Address: 192.168.1.120  |  Failed Attempts: 7
+
+[3] SUCCESSFUL LOGIN AFTER MULTIPLE FAILURES
+---------------------------------------------
+IP Address: 192.168.1.60  |  Username: user3  |  Failures Before Success: 6
+IP Address: 192.168.1.10  |  Username: user1  |  Failures Before Success: 6
+
+[4] MOST TARGETED USERNAMES
+------------------------------
+Username: root  |  Failed Attempts: 23
+Username: admin  |  Failed Attempts: 20
+Username: mysql  |  Failed Attempts: 7
+Username: ftp  |  Failed Attempts: 7
+Username: backup  |  Failed Attempts: 7
+
+[5] ATTACK ANALYSIS CONCLUSION
+------------------------------
+Possible brute force attack activity detected.
+Number of suspicious IPs detected: 10
+
+=================================================================
